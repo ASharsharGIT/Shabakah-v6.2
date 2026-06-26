@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 50" width="200" height="50">
+  <!-- White version for dark backgrounds -->
+  <text x="10" y="35" font-family="Arial, sans-serif" font-size="28" font-weight="bold" fill="#FFFFFF">
+    SHABAKAH
+  </text>
+  
+  <!-- Tech accent -->
+  <circle cx="185" cy="15" r="3" fill="#06B6D4" opacity="0.9"/>
+  <circle cx="192" cy="22" r="2" fill="#3B82F6" opacity="0.7"/>
+  <circle cx="178" cy="20" r="2.5" fill="#06B6D4" opacity="0.8"/>
+</svg>
