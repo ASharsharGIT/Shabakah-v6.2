@@ -1,0 +1,468 @@
+/* ===================================
+   MODERN ICON SYSTEM - 2026 Edition
+   SVG Stroke-based icons with animations
+   Using Lucide/Phosphor aesthetic
+   =================================== */
+
+/* Base icon class */
+[class^="icon-"],
+[class*=" icon-"] {
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    vertical-align: middle;
+    position: relative;
+    transition: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+/* Icon hover states */
+[class^="icon-"]:hover,
+[class*=" icon-"]:hover {
+    transform: scale(1.1);
+}
+
+/* Animated icon wrapper */
+.icon-animated {
+    animation: iconPulse 2s ease-in-out infinite;
+}
+
+@keyframes iconPulse {
+    0%, 100% { transform: scale(1); opacity: 1; }
+    50% { transform: scale(1.05); opacity: 0.8; }
+}
+
+/* Icon draw-in animation */
+.icon-draw {
+    animation: iconDraw 1s ease-out forwards;
+}
+
+@keyframes iconDraw {
+    from {
+        stroke-dashoffset: 100;
+        opacity: 0;
+    }
+    to {
+        stroke-dashoffset: 0;
+        opacity: 1;
+    }
+}
+
+/* ===== MODERN STROKE ICONS (2026 Style) ===== */
+/* Enhanced with CSS for better visual impact */
+
+.icon-search::before { content: '⌕'; font-size: 1.2em; }
+.icon-menu::before { content: '☰'; font-size: 1.2em; }
+.icon-close::before { content: '✕'; font-size: 1.3em; font-weight: 300; }
+.icon-arrow-right::before { content: '→'; font-size: 1.1em; }
+.icon-arrow-left::before { content: '←'; font-size: 1.1em; }
+.icon-arrow-up::before { content: '↑'; font-size: 1.1em; }
+.icon-arrow-down::before { content: '↓'; font-size: 1.1em; }
+.icon-chevron-down::before { content: '⌄'; font-size: 1.2em; }
+.icon-chevron-up::before { content: '⌃'; font-size: 1.2em; }
+.icon-chevron-left::before { content: '‹'; font-size: 1.3em; }
+.icon-chevron-right::before { content: '›'; font-size: 1.3em; }
+
+/* ===== IT SERVICE ICONS (Modern Tech Aesthetic) ===== */
+/* Enhanced with vibrant gradients and better symbols */
+
+/* Infrastructure - Server/Network */
+.icon-infrastructure::before { 
+    content: '▦'; 
+    font-size: 1.4em;
+    background: var(--gradient-cyber);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    font-weight: bold;
+}
+
+/* Data Center - Database/Cloud */
+.icon-datacenter::before { 
+    content: '⬡'; 
+    font-size: 1.4em;
+    background: var(--gradient-accent);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    font-weight: bold;
+}
+
+/* Cybersecurity - Shield Lock */
+.icon-security::before { 
+    content: '◈'; 
+    font-size: 1.4em;
+    background: var(--gradient-gold);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    font-weight: bold;
+}
+
+.icon-shield::before { 
+    content: '⬟'; 
+    font-size: 1.3em;
+    color: var(--gold-bright);
+}
+
+/* Communications - Network Nodes */
+.icon-communications::before { 
+    content: '◉'; 
+    font-size: 1.4em;
+    background: var(--gradient-primary);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    font-weight: bold;
+}
+
+/* End User - User Interface */
+.icon-enduser::before { 
+    content: '◎'; 
+    font-size: 1.4em;
+    background: var(--gradient-cyber);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+/* Software - Code/App */
+.icon-software::before { 
+    content: '⬢'; 
+    font-size: 1.4em;
+    background: var(--gradient-sunset);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    font-weight: bold;
+}
+
+/* Managed Services - Settings/Gear */
+.icon-managed::before { 
+    content: '⚙'; 
+    font-size: 1.4em;
+    background: var(--gradient-accent);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    animation: iconRotateSlow 10s linear infinite;
+}
+
+@keyframes iconRotateSlow {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
+/* ===== FEATURE/WHY ICONS (Premium Modern) ===== */
+
+.icon-shield-check::before { 
+    content: '◈'; 
+    font-size: 1.5em;
+    color: var(--teal-bright);
+    text-shadow: 0 0 20px rgba(0, 217, 255, 0.5);
+}
+
+.icon-clock-24::before { 
+    content: '◷'; 
+    font-size: 1.5em;
+    color: var(--cyan-electric);
+    animation: iconPulse 2s ease-in-out infinite;
+}
+
+.icon-clock::before { 
+    content: '◷'; 
+    font-size: 1.3em;
+    color: var(--sky-bright);
+}
+
+.icon-verified::before { 
+    content: '✓'; 
+    font-size: 1.6em;
+    color: var(--green-tech);
+    font-weight: bold;
+    text-shadow: 0 0 15px rgba(16, 185, 129, 0.5);
+}
+
+.icon-globe::before { 
+    content: '◉'; 
+    font-size: 1.5em;
+    background: var(--gradient-cyber);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.icon-trophy::before { 
+    content: '❖'; 
+    font-size: 1.5em;
+    background: var(--gradient-gold);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-shadow: 0 0 20px rgba(255, 184, 0, 0.3);
+}
+
+.icon-uptime::before { 
+    content: '⚡'; 
+    font-size: 1.4em;
+    color: var(--gold-bright);
+    animation: iconFlash 2s ease-in-out infinite;
+}
+
+@keyframes iconFlash {
+    0%, 100% { opacity: 1; text-shadow: 0 0 10px rgba(255, 184, 0, 0.5); }
+    50% { opacity: 0.7; text-shadow: 0 0 20px rgba(255, 184, 0, 0.8); }
+}
+
+/* Timeline/History Icons */
+.icon-rocket::before { content: '🚀'; }
+.icon-network::before { content: '🌐'; }
+.icon-certification::before { content: '📜'; }
+.icon-cloud::before { content: '☁️'; }
+
+/* Philosophy Icons */
+.icon-lock::before { content: '🔒'; }
+.icon-uptime::before { content: '⚡'; }
+.icon-compliance::before { content: '✓'; }
+.icon-separation::before { content: '⊞'; }
+
+/* Vision/Mission Icons */
+.icon-eye::before { content: '👁️'; }
+.icon-target::before { content: '🎯'; }
+
+/* Value Icons */
+.icon-excellence::before { content: '⭐'; }
+.icon-integrity::before { content: '🤝'; }
+.icon-innovation::before { content: '💡'; }
+.icon-partnership::before { content: '🤝'; }
+
+/* Partnership/Benefit Icons */
+.icon-cert::before { content: '📜'; }
+.icon-priority::before { content: '⚡'; }
+.icon-warranty::before { content: '🛡️'; }
+.icon-training::before { content: '📚'; }
+.icon-genuine::before { content: '✓'; }
+
+/* Solution Industry Icons */
+.icon-government::before { content: '🏛️'; }
+.icon-finance::before { content: '💰'; }
+.icon-healthcare::before { content: '🏥'; }
+.icon-education::before { content: '🎓'; }
+.icon-energy::before { content: '⚡'; }
+.icon-manufacturing::before { content: '🏭'; }
+.icon-check::before { content: '✓'; }
+
+/* Differentiator Icons */
+.icon-local::before { content: '📍'; }
+.icon-vendor::before { content: '⚙️'; }
+.icon-vision::before { content: '🎯'; }
+
+/* Social Media Full Icons */
+.icon-facebook::before { content: 'f'; }
+.icon-instagram::before { content: '📷'; }
+
+/* ===== STATS ICONS (3D Style with Depth) ===== */
+
+.icon-projects::before { 
+    content: '◆'; 
+    font-size: 1.6em;
+    background: var(--gradient-accent);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    filter: drop-shadow(0 4px 8px rgba(0, 196, 230, 0.4));
+}
+
+.icon-clients::before { 
+    content: '◉'; 
+    font-size: 1.6em;
+    background: var(--gradient-cyber);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    filter: drop-shadow(0 4px 8px rgba(0, 229, 255, 0.4));
+}
+
+.icon-years::before { 
+    content: '◈'; 
+    font-size: 1.6em;
+    background: var(--gradient-gold);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    filter: drop-shadow(0 4px 8px rgba(255, 184, 0, 0.4));
+}
+
+.icon-support::before { 
+    content: '◎'; 
+    font-size: 1.6em;
+    color: var(--teal-bright);
+    animation: iconPulse 3s ease-in-out infinite;
+    filter: drop-shadow(0 4px 8px rgba(0, 217, 255, 0.5));
+}
+
+/* Social Media Icons - Modern Minimal */
+.icon-linkedin::before { 
+    content: 'in'; 
+    font-size: 0.9em;
+    font-weight: 600;
+    color: var(--cyan-electric);
+}
+
+.icon-facebook::before { 
+    content: 'f'; 
+    font-size: 1.1em;
+    font-weight: 600;
+    color: var(--sky-bright);
+}
+
+.icon-instagram::before { 
+    content: '◉'; 
+    font-size: 1.2em;
+    background: var(--gradient-sunset);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+/* Contact/Location Icons */
+.icon-location::before {
+    content: '◈';
+    color: var(--teal-bright);
+}
+
+.icon-phone::before {
+    content: '☎';
+    color: var(--cyan-electric);
+}
+
+.icon-email::before {
+    content: '✉';
+    color: var(--sky-bright);
+}
+
+.icon-message::before {
+    content: '◎';
+    color: var(--teal-bright);
+}
+
+/* Star Rating */
+.icon-star-filled::before {
+    content: '★';
+    color: var(--gold-bright);
+    text-shadow: 0 0 10px rgba(255, 184, 0, 0.5);
+}
+
+.icon-star::before {
+    content: '☆';
+    color: var(--gray-400);
+}
+
+/* Cookie */
+.icon-cookie::before {
+    content: '◉';
+    color: var(--amber-warm);
+}
+
+/* Social Media Icons */
+.icon-linkedin::before { content: '💼'; }
+.icon-twitter::before { content: '🐦'; }
+.icon-email::before { content: '✉️'; }
+
+/* Contact Icons */
+.icon-location::before { content: '📍'; }
+.icon-phone::before { content: '📞'; }
+.icon-message::before { content: '💬'; }
+
+/* Misc Icons */
+.icon-cookie::before { content: '🍪'; }
+.icon-star-filled::before { content: '⭐'; }
+.icon-star-outline::before { content: '☆'; }
+
+/* ===== RECOMMENDED ICON LIBRARIES ===== */
+/* 
+Replace these placeholders with one of these libraries:
+
+1. **Font Awesome** (Most popular)
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+   Usage: <i class="fas fa-search"></i>
+
+2. **Feather Icons** (Minimal & beautiful)
+   <script src="https://unpkg.com/feather-icons"></script>
+   Usage: <i data-feather="search"></i>
+   Script: feather.replace()
+
+3. **Remix Icon** (Modern & comprehensive)
+   <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+   Usage: <i class="ri-search-line"></i>
+
+4. **Custom Icon Font** (Best for branding)
+   Use IcoMoon or Fontello to create custom icon font
+   Export SVGs from design and generate web font
+
+5. **SVG Sprites** (Most flexible)
+   <svg><use xlink:href="#icon-search"></use></svg>
+*/
+
+/* ===== ICON SIZES ===== */
+.icon-sm { font-size: 1rem; }
+.icon-md { font-size: 1.5rem; }
+.icon-lg { font-size: 2rem; }
+.icon-xl { font-size: 3rem; }
+
+/* ===== ICON ANIMATIONS ===== */
+.icon-spin {
+    animation: icon-spin 1s linear infinite;
+}
+
+@keyframes icon-spin {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
+.icon-pulse {
+    animation: icon-pulse 2s ease-in-out infinite;
+}
+
+@keyframes icon-pulse {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.5; }
+}
+
+/* ===== ICON COLORS ===== */
+.icon-primary { color: var(--accent-blue); }
+.icon-secondary { color: var(--accent-cyan); }
+.icon-success { color: #10B981; }
+.icon-warning { color: var(--accent-gold); }
+.icon-danger { color: #EF4444; }
+.icon-muted { color: var(--gray-400); }
+
+/* IOT Page Icons */
+.icon-shield-check::before { content: "🛡️"; }
+.icon-clock-24::before { content: "⏰"; }
+.icon-network::before { content: "🌐"; }
+.icon-projects::before { content: "📊"; }
+.icon-arrow-right::before { content: "→"; }
+
+/* ===== QUICK INTEGRATION GUIDE ===== */
+/*
+To add Font Awesome (recommended quick solution):
+
+1. Add to <head> in all HTML files:
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+2. Replace icon classes:
+   .icon-search          → .fas .fa-search
+   .icon-menu            → .fas .fa-bars
+   .icon-close           → .fas .fa-times
+   .icon-arrow-right     → .fas .fa-arrow-right
+   .icon-shield          → .fas .fa-shield-alt
+   .icon-datacenter      → .fas .fa-server
+   .icon-security        → .fas .fa-lock
+   .icon-linkedin        → .fab .fa-linkedin
+   .icon-twitter         → .fab .fa-twitter
+   etc.
+
+3. Example usage:
+   <i class="fas fa-search"></i>
+   <i class="fab fa-linkedin"></i>
+*/

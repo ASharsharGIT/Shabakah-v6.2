@@ -1,0 +1,670 @@
+/* ============================================
+   MOBILE SCROLL DENSITY
+   Loaded last — spacing compression only.
+   No content hidden; no grid column forcing
+   on timelines, forms, tables, or FAQ.
+   ============================================ */
+
+/* --- Tier 2: conservative spacing tokens @640px --- */
+@media (max-width: 640px) {
+    :root {
+        --space-xl: 1.75rem;
+        --space-2xl: 2.25rem;
+        --space-3xl: 2.5rem;
+    }
+}
+
+/* --- Tier 2: section rhythm (all pages) --- */
+@media (max-width: 853px) {
+    .section-header {
+        margin-bottom: var(--space-md);
+    }
+
+    .section-description {
+        margin-bottom: var(--space-md);
+        line-height: 1.5;
+    }
+
+    .section-tag {
+        padding: 0.35rem 0.75rem;
+        font-size: 0.8rem;
+    }
+
+    .page-hero,
+    .page-hero-modern {
+        padding-top: 110px;
+    }
+
+    .footer-main-modern {
+        padding-top: 2.25rem;
+        padding-bottom: 2.25rem;
+    }
+
+    .footer-grid-modern {
+        gap: var(--space-lg);
+    }
+
+    /* Generic glass cards — exclude timeline, faq, tables */
+    .glass-card:not(.timeline-content):not(.faq-item),
+    .benefit-card,
+    .approach-step,
+    .diff-card,
+    .elm-product-card,
+    .client-logo-tile,
+    .activation-step {
+        padding: calc(var(--space-lg) * 0.85);
+    }
+
+    .service-detail-section {
+        padding-top: calc(var(--space-2xl) * 0.85);
+        padding-bottom: calc(var(--space-2xl) * 0.85);
+    }
+
+    .service-detail-grid {
+        gap: var(--space-xl);
+    }
+
+    .contact-grid {
+        gap: var(--space-2xl);
+    }
+
+    .overview-grid {
+        gap: var(--space-2xl);
+    }
+
+    .values-grid,
+    .philosophy-grid,
+    .benefits-grid,
+    .approach-grid,
+    .differentiators-grid {
+        gap: var(--space-md);
+    }
+
+    .vm-card {
+        padding: var(--space-2xl);
+    }
+
+    .timeline-content {
+        padding: var(--space-lg);
+    }
+
+    body.iot-page .section-padding {
+        padding-top: calc(var(--space-2xl) * 0.9);
+        padding-bottom: calc(var(--space-2xl) * 0.9);
+    }
+
+    body.iot-page .iot-hero {
+        padding-bottom: var(--space-xl);
+    }
+
+    .map-section {
+        padding-top: var(--space-xl);
+        padding-bottom: var(--space-xl);
+    }
+}
+
+@media (max-width: 640px) {
+    .page-hero,
+    .page-hero-modern {
+        padding-top: 95px;
+    }
+
+    .timeline-content {
+        padding: var(--space-md);
+    }
+}
+
+/* --- Tier 1: homepage hero + proof (!important mirrors modern-sections.css) --- */
+@media (max-width: 853px) {
+    .hero-section {
+        padding-bottom: var(--space-xl) !important;
+    }
+
+    .hero-glass {
+        padding: 1.25rem !important;
+    }
+
+    .hero-subtitle {
+        margin-bottom: 1rem !important;
+    }
+
+    .hero-text-content .hero-stats-unique,
+    .hero-stats-unique {
+        gap: 0.5rem !important;
+        margin-top: 1.25rem !important;
+        margin-bottom: 1.25rem !important;
+    }
+
+    .hero-stats-unique .stat-number {
+        font-size: 1.35rem !important;
+    }
+
+    .hero-stats-unique .stat-label {
+        font-size: 0.65rem;
+    }
+
+    .proof-section .section-description {
+        margin-bottom: 1.5rem !important;
+    }
+
+    .project-showcase {
+        gap: 1rem !important;
+        margin-top: 1.5rem !important;
+    }
+
+    .project-showcase .project-card {
+        padding: 1.15rem !important;
+    }
+
+    .proof-section .proof-icon {
+        width: 48px !important;
+        height: 48px !important;
+        margin-bottom: 1rem !important;
+    }
+
+    .proof-section .proof-icon svg {
+        width: 26px !important;
+        height: 26px !important;
+    }
+}
+
+/* --- Page hero stat cards (About, Services, Contact — not Solutions chips) --- */
+@media (max-width: 853px) {
+    .page-hero-modern:not(.page-hero-modern--solutions-stats) .hero-stats-row {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 0.5rem;
+        width: 100%;
+        margin-top: 1.5rem;
+        align-items: stretch;
+    }
+
+    .page-hero-modern:not(.page-hero-modern--solutions-stats) .hero-stat-item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        min-width: 0;
+        width: 100%;
+        max-width: 100%;
+        height: 100%;
+        padding: 0.65rem 0.4rem;
+        box-sizing: border-box;
+    }
+
+    .page-hero-modern:not(.page-hero-modern--solutions-stats) .hero-stat-number,
+    .page-hero-modern:not(.page-hero-modern--solutions-stats) .hero-stat-label {
+        display: block;
+        width: 100%;
+        max-width: 100%;
+        text-align: center;
+        overflow-wrap: break-word;
+        word-break: break-word;
+    }
+
+    .page-hero-modern:not(.page-hero-modern--solutions-stats) .hero-stat-number {
+        font-size: clamp(0.9rem, 3.6vw, 1.75rem);
+        line-height: 1.15;
+    }
+
+    .page-hero-modern:not(.page-hero-modern--solutions-stats) .hero-stat-label {
+        font-size: clamp(0.58rem, 2.4vw, 0.75rem);
+        line-height: 1.3;
+        margin-top: 0.35rem;
+    }
+}
+
+@media (max-width: 640px) {
+    .page-hero-modern:not(.page-hero-modern--solutions-stats) .hero-stats-row {
+        gap: 0.4rem;
+    }
+
+    .page-hero-modern:not(.page-hero-modern--solutions-stats) .hero-stat-item {
+        padding: 0.55rem 0.3rem;
+    }
+
+    .page-hero-modern:not(.page-hero-modern--solutions-stats) .hero-stat-number {
+        font-size: clamp(0.85rem, 3.2vw, 1.5rem);
+    }
+
+    .page-hero-modern:not(.page-hero-modern--solutions-stats) .hero-stat-label {
+        font-size: clamp(0.55rem, 2.2vw, 0.7rem);
+    }
+
+    .hero-glass {
+        padding: 1rem !important;
+    }
+
+    .project-showcase .project-card {
+        padding: 1rem !important;
+    }
+}
+
+/* --- Homepage: services (1-col preserved) --- */
+@media (max-width: 853px) {
+    .services-grid {
+        gap: var(--space-md);
+    }
+
+    .service-card {
+        padding: var(--space-md);
+    }
+
+    .service-icon {
+        width: 56px;
+        height: 56px;
+        margin-bottom: var(--space-sm);
+        font-size: 1.65rem;
+    }
+
+    .service-bullets {
+        line-height: 1.45;
+        margin-bottom: var(--space-sm);
+    }
+
+    .service-bullets li {
+        margin-bottom: 0.25rem;
+    }
+}
+
+/* --- Homepage: trust band --- */
+@media (max-width: 853px) {
+    .trust-band {
+        padding: var(--space-md) 0;
+    }
+
+    .trust-band .trust-marquee {
+        padding-block: var(--space-md);
+    }
+}
+
+/* --- Homepage: tech section (inline styles overridden) --- */
+@media (max-width: 853px) {
+    .tech-section .section-description {
+        margin-bottom: 2rem !important;
+    }
+
+    .tech-expertise-grid {
+        gap: 1.25rem !important;
+        margin-bottom: 2rem !important;
+    }
+
+    .tech-category {
+        padding: 1.25rem !important;
+    }
+
+    .tech-category > div[style*="width: 50px"] {
+        width: 40px !important;
+        height: 40px !important;
+        margin-bottom: 0.75rem !important;
+    }
+
+    .tech-category h3 {
+        font-size: 1.1rem !important;
+        margin-bottom: 0.75rem !important;
+    }
+
+    .tech-category-items {
+        gap: 0.5rem !important;
+    }
+
+    .tech-category-items span {
+        font-size: 0.85rem !important;
+    }
+
+    .tech-section .container > div[style*="text-align: center"] {
+        margin-top: 2rem !important;
+    }
+}
+
+@media (min-width: 480px) and (max-width: 853px) {
+    .tech-category-items {
+        column-count: 2;
+        column-gap: 1rem;
+    }
+
+    .tech-category-items span {
+        display: block;
+    }
+}
+
+/* --- Homepage: certifications --- */
+@media (max-width: 853px) {
+    .testimonials-modern.certifications-section,
+    .certifications-section.testimonials-modern {
+        padding: 3.5rem 0;
+    }
+
+    .certifications-showcase {
+        gap: 1.25rem;
+    }
+
+    .certifications-primary .cert-item--primary {
+        min-height: 180px;
+        padding: 1.25rem;
+    }
+
+    .cert-item {
+        min-height: 80px;
+        padding: 1rem;
+    }
+
+    .testimonials-container--certs .testimonials-header {
+        margin-bottom: 1.75rem;
+    }
+}
+
+/* --- Partners: fix 4-col !important bug + square vendor cards --- */
+@media (max-width: 853px) {
+    .partners-grid {
+        grid-template-columns: repeat(2, 1fr) !important;
+        gap: var(--space-sm);
+    }
+
+    .clients-logos-grid {
+        gap: var(--space-sm);
+    }
+
+    .partners-clients-header {
+        margin-bottom: var(--space-2xl);
+    }
+
+    .partner-category {
+        margin-bottom: var(--space-2xl);
+    }
+
+    .category-header {
+        margin-bottom: var(--space-xl);
+        padding-top: var(--space-xl);
+    }
+
+    .partners-section .partner-card.glass-card {
+        aspect-ratio: 1 / 1;
+        min-height: 0;
+        padding: var(--space-sm);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .partners-section .partner-card .partner-logo {
+        width: 100%;
+        height: 100%;
+        flex: none;
+        align-self: center;
+        margin: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .partners-section .partner-card .partner-logo img {
+        max-width: 88% !important;
+        max-height: 88% !important;
+        width: auto !important;
+        height: auto !important;
+        object-fit: contain !important;
+        display: block;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 640px) {
+    .partners-section .partner-card.glass-card {
+        padding: var(--space-xs);
+    }
+}
+
+/* --- Services & Solutions detail pages — mobile alignment --- */
+@media (max-width: 853px) {
+    /* Solutions hero nav chips — full-width stacked, text contained */
+    .page-hero-modern--solutions-stats .hero-stats-row,
+    .page-hero-modern--solutions-stats .hero-solution-nav {
+        display: grid;
+        grid-template-columns: minmax(0, 1fr);
+        gap: 0.5rem;
+        width: 100%;
+        margin-top: 1.25rem;
+    }
+
+    .page-hero-modern--solutions-stats .hero-stat-item,
+    .page-hero-modern--solutions-stats a.hero-solution-chip {
+        flex: none;
+        min-width: 0;
+        max-width: 100%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0.75rem 0.85rem;
+        box-sizing: border-box;
+    }
+
+    .page-hero-modern--solutions-stats .hero-stat-label {
+        display: block;
+        width: 100%;
+        max-width: 100%;
+        margin-top: 0;
+        text-align: center;
+        overflow-wrap: break-word;
+        word-break: break-word;
+        line-height: 1.35;
+        font-size: clamp(0.8rem, 3.2vw, 0.95rem);
+    }
+
+    /* Service section headers — icon + title row, title full width below */
+    body.service-detail-page--services .service-detail-header,
+    body.service-detail-page--solutions .service-detail-header {
+        display: grid;
+        grid-template-columns: auto 1fr;
+        grid-template-rows: auto auto;
+        align-items: center;
+        column-gap: 0.75rem;
+        row-gap: 0.5rem;
+        width: 100%;
+    }
+
+    body.service-detail-page--services .service-detail-icon,
+    body.service-detail-page--solutions .service-detail-icon {
+        grid-column: 1;
+        grid-row: 1;
+        justify-self: start;
+        width: 52px;
+        height: 52px;
+    }
+
+    body.service-detail-page--services .service-detail-icon .lucide-icon,
+    body.service-detail-page--solutions .service-detail-icon .lucide-icon {
+        width: 24px;
+        height: 24px;
+    }
+
+    body.service-detail-page--services .service-detail-header .section-title,
+    body.service-detail-page--solutions .service-detail-header .section-title {
+        grid-column: 1 / -1;
+        grid-row: 2;
+        width: 100%;
+        min-width: 0;
+        text-align: start;
+        overflow-wrap: break-word;
+        word-break: break-word;
+        line-height: 1.25;
+        font-size: clamp(1.15rem, 4.5vw, 1.5rem);
+    }
+
+    html[dir="rtl"] body.service-detail-page--services .service-detail-header,
+    html[dir="rtl"] body.service-detail-page--solutions .service-detail-header,
+    body.rtl.service-detail-page--services .service-detail-header,
+    body.rtl.service-detail-page--solutions .service-detail-header {
+        direction: rtl;
+        grid-template-columns: 1fr auto;
+    }
+
+    html[dir="rtl"] body.service-detail-page--services .service-detail-icon,
+    html[dir="rtl"] body.service-detail-page--solutions .service-detail-icon,
+    body.rtl.service-detail-page--services .service-detail-icon,
+    body.rtl.service-detail-page--solutions .service-detail-icon {
+        grid-column: 2;
+        grid-row: 1;
+        justify-self: end;
+    }
+
+    html[dir="rtl"] body.service-detail-page--services .service-detail-header .section-title,
+    html[dir="rtl"] body.service-detail-page--solutions .service-detail-header .section-title,
+    body.rtl.service-detail-page--services .service-detail-header .section-title,
+    body.rtl.service-detail-page--solutions .service-detail-header .section-title {
+        text-align: start;
+    }
+
+    /* Solutions content panel — tighter padding, full-width text */
+    body.service-detail-page--solutions .service-detail-grid {
+        padding: var(--space-md);
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    body.service-detail-page--solutions .service-detail-content,
+    body.service-detail-page--services .service-detail-content {
+        width: 100%;
+        min-width: 0;
+    }
+
+    body.service-detail-page--solutions .service-detail-body .service-bullets,
+    body.service-detail-page--services .service-description {
+        overflow-wrap: break-word;
+        word-break: break-word;
+        text-align: start;
+    }
+
+    body.service-detail-page--solutions .service-detail-body .service-bullets {
+        padding-inline-start: 1.1rem;
+        padding-inline-end: 0;
+        font-size: var(--font-size-base);
+        line-height: 1.65;
+    }
+
+    body.service-detail-page--solutions .service-detail-body .service-bullets li,
+    body.service-detail-page--services .service-goal,
+    body.service-detail-page--solutions .service-detail-body .service-goal {
+        overflow-wrap: break-word;
+        word-break: break-word;
+        text-align: start;
+    }
+
+    /* Services feature cards — icon + text aligned, text wraps inside card */
+    body.service-detail-page--services .feature-item {
+        align-items: flex-start;
+        width: 100%;
+        box-sizing: border-box;
+        gap: var(--space-sm);
+    }
+
+    body.service-detail-page--services .feature-item .lucide-icon {
+        flex-shrink: 0;
+        margin-top: 0.15rem;
+    }
+
+    body.service-detail-page--services .feature-item > div {
+        min-width: 0;
+        flex: 1;
+    }
+
+    body.service-detail-page--services .feature-item h4,
+    body.service-detail-page--services .feature-item p {
+        overflow-wrap: break-word;
+        word-break: break-word;
+        text-align: start;
+    }
+
+    body.service-detail-page--services .service-features {
+        width: 100%;
+    }
+
+    /* Solutions approach + differentiator cards — text stays inside */
+    body.service-detail-page--solutions .approach-step,
+    body.service-detail-page--solutions .diff-card {
+        min-height: 0;
+        width: 100%;
+        box-sizing: border-box;
+        align-items: center;
+        text-align: center;
+    }
+
+    body.service-detail-page--solutions .approach-step h3,
+    body.service-detail-page--solutions .approach-step p,
+    body.service-detail-page--solutions .diff-card h3,
+    body.service-detail-page--solutions .diff-card p {
+        width: 100%;
+        overflow-wrap: break-word;
+        word-break: break-word;
+    }
+
+    body.service-detail-page--solutions .step-number {
+        font-size: 2.25rem;
+    }
+
+    /* Single-column grids — consistent width; undo reverse rtl column-swap only */
+    body.service-detail-page--services .service-detail-grid,
+    body.service-detail-page--solutions .service-detail-grid {
+        width: 100%;
+    }
+
+    body.service-detail-page--services .service-detail-grid.reverse,
+    body.service-detail-page--solutions .service-detail-grid.reverse {
+        direction: ltr;
+    }
+
+    body.service-detail-page--services .service-detail-grid > *,
+    body.service-detail-page--solutions .service-detail-grid > * {
+        width: 100%;
+        min-width: 0;
+    }
+
+    body.service-detail-page--services .service-detail-image,
+    body.service-detail-page--solutions .service-detail-image {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    html[dir="rtl"] body.service-detail-page--services .service-detail-content,
+    html[dir="rtl"] body.service-detail-page--solutions .service-detail-content,
+    body.rtl.service-detail-page--services .service-detail-content,
+    body.rtl.service-detail-page--solutions .service-detail-content {
+        padding-inline-start: var(--space-md);
+    }
+}
+
+@media (max-width: 640px) {
+    body.service-detail-page--services .service-detail-icon,
+    body.service-detail-page--solutions .service-detail-icon {
+        width: 48px;
+        height: 48px;
+    }
+
+    body.service-detail-page--solutions .service-detail-grid {
+        padding: var(--space-sm);
+    }
+
+    .page-hero-modern--solutions-stats a.hero-solution-chip {
+        padding: 0.65rem 0.75rem;
+    }
+}
+
+/* --- Carousel compact (works with carousel.js height sync) --- */
+@media (max-width: 853px) {
+    .carousel-header {
+        margin-bottom: 2rem;
+    }
+
+    .slide-content {
+        padding: 1rem 0;
+    }
+
+    .slide-badge {
+        margin-bottom: 1rem;
+    }
+
+    .slide-icon {
+        margin-bottom: 1rem;
+    }
+}
